@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cardsHolder">
+    <fragment
+        android:id="@+id/cardsHolder"
+        android:name="com.example.notas.cardsHolder"
+        android:label="fragment_cards_holder"
+        tools:layout="@layout/fragment_cards_holder" >
+
+        <argument
+            android:name="title"
+            android:defaultValue=""
+            app:argType="string"
+
+            />
+
+        <argument
+            android:name="description"
+            android:defaultValue=""
+            app:argType="string"
+            />
+
+
+        <action
+            android:id="@+id/action_cardsHolder_to_newNote"
+            app:destination="@id/newNote" />
+        <action
+            android:id="@+id/action_cardsHolder_to_note"
+            app:destination="@id/note" />
+        <action
+            android:id="@+id/action_cardsHolder_to_settingsActivity22"
+            app:destination="@id/settingsActivity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/newNote"
+        android:name="com.example.notas.NewNote"
+        android:label="fragment_note"
+        tools:layout="@layout/fragment_note" >
+
+        <argument
+            android:name="description"
+            android:defaultValue=""
+            app:argType="string"
+            />
+
+        <action
+            android:id="@+id/action_newNote_to_cardsHolder"
+            app:destination="@id/cardsHolder" />
+    </fragment>
+    <fragment
+        android:id="@+id/note"
+        android:name="com.example.notas.Note"
+        android:label="Note" >
+        <argument
+            android:name="description"
+            app:argType="com.example.notas.NoteData"
+            />
+
+
+    </fragment>
+    <activity
+        android:id="@+id/settingsActivity2"
+        android:name="com.example.notas.SettingsActivity"
+        android:label="SettingsActivity" />
+</navigation>

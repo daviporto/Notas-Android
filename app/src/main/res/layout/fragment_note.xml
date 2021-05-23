@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewNote">
+
+    <EditText
+        android:id="@+id/txt_title"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_on_primary"
+        android:ems="10"
+        android:hint="@string/hint_titulo"
+        android:inputType="textMultiLine|text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_description"
+        android:layout_width="395dp"
+        android:layout_height="213dp"
+        android:backgroundTint="@color/design_default_color_on_primary"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/hint_texto"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

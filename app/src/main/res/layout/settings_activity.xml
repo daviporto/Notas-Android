@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8sp"
+                    android:text="@string/txt_cards_holder_configurations"
+                    android:textSize="24sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:layout_marginTop="8sp">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8sp"
+                        android:layout_marginTop="8sp"
+                        android:layout_marginEnd="8sp"
+                        android:layout_marginBottom="8sp"
+                        android:layout_weight="0.8"
+                        android:text="@string/title_size"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spn_tamanho_titulo_lista"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8sp"
+                        android:layout_marginTop="8sp"
+                        android:layout_marginEnd="13sp"
+                        android:layout_marginBottom="8sp"
+                        android:layout_weight="0.2"
+                        android:entries="@array/size_options" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:layout_marginTop="8sp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="8sp"
+                        android:layout_marginTop="8sp"
+                        android:layout_marginEnd="8sp"
+                        android:layout_marginBottom="8sp"
+                        android:text="@string/description_size"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spn_tamanho_descricao_lista"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8sp"
+                        android:layout_marginTop="8sp"
+                        android:layout_marginEnd="13sp"
+                        android:layout_marginBottom="8sp"
+
+                        android:entries="@array/size_options" />
+
+                </RelativeLayout>
+
+                <Switch
+                    android:id="@+id/swt_mostrar_divisor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8sp"
+                    android:checked="true"
+                    android:text="@string/notes_divider"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/swt_pesquisar_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8sp"
+                    android:checked="true"
+                    android:text="@string/search_notes_title"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/swt_pesquisar_descricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8sp"
+                    android:text="@string/search_notes_description"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8sp"
+                    android:text="@string/txt_notes_configurations"
+                    android:textSize="24sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:layout_marginTop="8sp">
+
+                    <TextView
+                        android:id="@+id/textView77"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/description_size"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spn_tamanho_descricao_nota"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="13sp"
+
+                        android:entries="@array/size_options" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:layout_marginTop="8sp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8sp"
+
+                        android:layout_marginTop="8sp"
+                        android:layout_marginEnd="8sp"
+                        android:layout_marginBottom="8sp"
+                        android:text="@string/title_size"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spn_tamanho_titulo_nota"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="8sp"
+                        android:layout_marginTop="8sp"
+                        android:layout_marginEnd="13sp"
+                        android:layout_marginBottom="8sp"
+
+                        android:entries="@array/size_options" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</LinearLayout>

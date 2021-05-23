@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Notas</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="btn_pronto">pronto</string>
+    <string name="btn_cancel">cancelar</string>
+    <string name="hint_titulo">Titulo</string>
+    <string name="hint_texto">Texto</string>
+    <string name="mi_share">Texto</string>
+    <string name="mi_delete">excluir</string>
+    <string name="mi_pronto">pronto</string>
+    <string name="mi_voltar">voltar</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- configuration  -->
+    <string name="txt_cards_holder_configurations">configurações da tela principal(Lista)</string>
+    <string name="title_size">tamanho do título</string>
+    <string name="description_size">tamanho da descrição</string>
+    <string name="notes_divider">mostrar divisor entre as notas</string>
+    <string name="search_notes_title">pesquisar notas pelo título</string>
+    <string name="search_notes_description">pesquisar notas pela descrição</string>
+    <string name="txt_notes_configurations">configurações das notas</string>
+
+    <string-array name="size_options">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>18</item>
+        <item>24</item>
+        <item>30</item>
+        <item>36</item>
+    </string-array>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+</resources>
